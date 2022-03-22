@@ -181,9 +181,27 @@ ul {
 
   list-style: none;
 }
+.best-list-item {
+  width: 270px;
+}
 .best-list-item:not(:last-child) {
   margin-right: 30px;
 }
+.best-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.best-icon {
+  display: block;
+}
+
 .best-item-title {
   margin-bottom: 10px;
 
@@ -240,7 +258,13 @@ ul {
 
   list-style: none;
 }
-.team-list-item:not(:last-child):not(:last-child) {
+.team-list-item {
+  background: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 .team-item-img {
@@ -270,6 +294,80 @@ ul {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.team-list-icon {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+.team-item-icon:not(:last-child) {
+  margin-right: 10px;
+}
+.team-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-white-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+.team-social-links:hover,
+.team-social-links:focus {
+  background-color: var(--logo-hover-color);
+}
+.team-link-icon {
+  fill: #afb1b8;
+}
+.team-social-links:hover .team-link-icon,
+.team-social-links:focus .team-link-icon {
+  fill: var(--main-white-color);
+}
+
+/* секция Постоянные клиенты */
+.customer-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-black-color);
+}
+.customer-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.customer-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customer-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.customer-item-link:hover,
+.customer-item-link:focus {
+  border: 1px solid var(--logo-hover-color);
+}
+.customer-link-icon {
+  fill: #afb1b8;
+}
+.customer-item-link:hover .customer-link-icon,
+.customer-item-link:focus .customer-link-icon {
+  fill: var(--logo-hover-color);
+}
+
 /* страница ПОРТФОЛИО */
 
 .portfolio-title {
