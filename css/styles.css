@@ -156,6 +156,8 @@ img {
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero/img.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -431,8 +433,11 @@ img {
 .portfolio-items:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.portfolio-items:hover,
-.portfolio-items:focus {
+.prtfl-item-link {
+  display: block;
+}
+.prtfl-item-link:hover,
+.prtfl-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -467,7 +472,7 @@ img {
 }
 .footer .container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .footer-address {
   margin-right: 70px;
@@ -518,6 +523,9 @@ img {
 .ftr-item-contact:focus {
   color: var(--logo-hover-color);
 }
+
+/* ПРИСОЕДИНЯЙТЕСЬ */
+
 .ftr-join-title {
   margin-bottom: 20px;
 
